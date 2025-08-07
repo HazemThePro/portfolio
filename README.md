@@ -5,7 +5,25 @@
 
 #### Description:
 
-This project is a modern, responsive portfolio website built entirely with HTML, CSS, and vanilla JavaScript. It showcases my web development skills and serves as a professional platform to display my work, skills, and contact information. The website features a contemporary dark theme with sophisticated animations, interactive elements, and a fully responsive design that adapts seamlessly across all device sizes.
+This project is a modern, responsive portfolio website built entirely with HTML, CSS, and vanilla JavaScript.
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [File Structure and Contents](#file-structure-and-contents)
+  - [index.html](#indexhtml)
+  - [Embedded CSS Styles](#embedded-css-styles)
+  - [Embedded JavaScript](#embedded-javascript)
+- [Design Choices and Rationale](#design-choices-and-rationale)
+  - [Color Scheme and Visual Design](#color-scheme-and-visual-design)
+  - [Single-Page Application Approach](#single-page-application-approach)
+  - [Animation and Interaction Strategy](#animation-and-interaction-strategy)
+  - [Technology Stack Decisions](#technology-stack-decisions)
+- [Featured Projects Section](#featured-projects-section)
+- [Responsive Design Implementation](#responsive-design-implementation)
+- [Performance Optimizations](#performance-optimizations)
+- [Accessibility Considerations](#accessibility-considerations)
+- [Future Enhancements](#future-enhancements) It showcases my web development skills and serves as a professional platform to display my work, skills, and contact information. The website features a contemporary dark theme with sophisticated animations, interactive elements, and a fully responsive design that adapts seamlessly across all device sizes.
 
 ## Project Overview
 
