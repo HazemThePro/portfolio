@@ -1,15 +1,16 @@
-# Hazem Abdelhamid - Modern Portfolio Website
+# CS50 Final Project: Hazem Abdelhamid - Modern Portfolio Website
 
-#### Video Demo: <URL_TO_BE_ADDED>
-#### GitHub Repository: <GITHUB_REPO_URL_HERE>
+#### Video Demo: [Watch on YouTube](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+#### GitHub Repository: [View Source Code](https://github.com/HazemThePro/portfolio)
 
 #### Description:
 
-This project is a modern, responsive portfolio website built entirely with HTML, CSS, and vanilla JavaScript.
+This project is my CS50 Final Project - a modern, responsive portfolio website built entirely with HTML, CSS, and vanilla JavaScript. It showcases my web development skills and serves as a professional platform to display my work, skills, and contact information. The website features a contemporary dark theme with sophisticated animations, interactive elements, and a fully responsive design that adapts seamlessly across all device sizes.
 
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [CS50 Concepts Applied](#cs50-concepts-applied)
 - [File Structure and Contents](#file-structure-and-contents)
   - [index.html](#indexhtml)
   - [Embedded CSS Styles](#embedded-css-styles)
@@ -23,11 +24,39 @@ This project is a modern, responsive portfolio website built entirely with HTML,
 - [Responsive Design Implementation](#responsive-design-implementation)
 - [Performance Optimizations](#performance-optimizations)
 - [Accessibility Considerations](#accessibility-considerations)
-- [Future Enhancements](#future-enhancements) It showcases my web development skills and serves as a professional platform to display my work, skills, and contact information. The website features a contemporary dark theme with sophisticated animations, interactive elements, and a fully responsive design that adapts seamlessly across all device sizes.
+- [Future Enhancements](#future-enhancements)
+- [Acknowledgments](#acknowledgments)
 
 ## Project Overview
 
-The portfolio website represents a complete front-end web development project that demonstrates proficiency in modern web technologies and design principles. Rather than using frameworks or libraries, I chose to build everything from scratch using vanilla technologies to showcase fundamental programming skills and have complete control over every aspect of the user experience.
+This portfolio website represents my CS50 Final Project, demonstrating the culmination of skills learned throughout the course. It's a complete front-end web development project that showcases proficiency in modern web technologies and design principles. Rather than using frameworks or libraries, I chose to build everything from scratch using vanilla technologies to demonstrate fundamental programming skills learned in CS50 and have complete control over every aspect of the user experience.
+
+The project fulfills CS50's final project requirements by being:
+- **Substantially different** from previous problem sets and tracks
+- **Implemented using technologies** learned throughout CS50 (HTML, CSS, JavaScript)
+- **A complete application** with multiple interactive features and sections
+- **Well-documented** with comprehensive code comments and this README
+- **Creative and personal** - showcasing my own work and professional identity
+
+## CS50 Concepts Applied
+
+This project incorporates numerous concepts learned throughout CS50:
+
+**Programming Fundamentals:**
+- **Algorithms and Logic** - Implemented in animation timing and scroll behavior
+- **Data Structures** - Using JavaScript objects and arrays for content management
+- **Problem Solving** - Debugging responsive design issues and cross-browser compatibility
+
+**Web Development (Weeks 8-9):**
+- **HTML5** - Semantic markup and accessibility best practices
+- **CSS3** - Advanced styling, animations, and responsive design
+- **JavaScript** - DOM manipulation, event handling, and modern APIs
+- **User Interface Design** - Creating intuitive and engaging user experiences
+
+**Computer Science Principles:**
+- **Efficiency** - Optimized animations using CSS transforms and Intersection Observer
+- **Abstraction** - CSS custom properties and reusable design patterns
+- **Design Thinking** - User-centered approach to navigation and content organization
 
 ## File Structure and Contents
 
@@ -131,3 +160,15 @@ While the current version is fully functional and professional, potential improv
 - **Multilingual support** for broader accessibility
 
 This portfolio website successfully demonstrates modern web development skills while maintaining excellent performance, accessibility, and user experience standards. It serves as both a showcase of technical abilities and a professional platform for career opportunities in web development.
+
+## Acknowledgments
+
+I would like to extend my heartfelt gratitude to the entire CS50 team at Harvard University for creating such an exceptional and transformative learning experience. Special thanks to:
+
+- **Professor David J. Malan** for his inspiring lectures and making computer science accessible and exciting
+- **The CS50 teaching staff and course assistants** for their dedication and support throughout the course
+- **The CS50 community** for fostering an environment of collaborative learning and encouragement
+
+This course has not only taught me programming fundamentals but also instilled in me the confidence to tackle complex problems and think like a computer scientist. The skills and mindset I've gained through CS50 will undoubtedly shape my future endeavors in technology and beyond.
+
+Thank you for this incredible journey from "I don't know anything about programming" to building complete web applications. This was CS50! 🎓
