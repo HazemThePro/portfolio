@@ -1,6 +1,7 @@
 # Hazem Abdelhamid - Modern Portfolio Website
 
 #### Video Demo: <URL_TO_BE_ADDED>
+#### GitHub Repository: <GITHUB_REPO_URL_HERE>
 
 #### Description:
 
