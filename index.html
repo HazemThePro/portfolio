@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Meta Information for SEO and Performance -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Hazem Abdelhamid - Multi-skilled Developer specializing in Web & IT Solutions. View my portfolio of projects and get in touch." />
+        <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript, web development" />
+        <title>Hazem Abdelhamid | Portfolio</title>
+
+        <!-- Preconnect to external resources for faster loading -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- External stylesheets -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+        <style>
+            /* ================================
+           CSS CUSTOM PROPERTIES (VARIABLES)
+           ================================ */
+            :root {
+                /* Color Palette */
+                --primary-bg: #0a0e1a;
+                --secondary-bg: #1a1f3a;
+                --accent-color: #4facfe;
+                --accent-hover: #00f2fe;
+                --card-bg: #1e2749;
+                --text-primary: #ffffff;
+                --text-secondary: #a0a9c0;
+                --text-muted: #6b7280;
+                --border-color: #2d3748;
+
+                /* Gradients and Effects */
+                --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                --shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+                /* Animation Durations */
+                --transition-fast: 0.3s;
+                --transition-medium: 0.4s;
+            }
+
+            /* ================================
+           GLOBAL RESET AND BASE STYLES
+           ================================ */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                background: var(--primary-bg);
+                color: var(--text-primary);
+                line-height: 1.7;
+                overflow-x: hidden;
+            }
+
+            /* ================================
+           ANIMATED BACKGROUND
+           ================================ */
+            /* Dynamic background with moving gradients */
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background:
+                radial-gradient(circle at 20% 50%, rgba(79, 172, 254, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(0, 242, 254, 0.05) 0%, transparent 50%);
+                z-index: -1;
+                animation: backgroundShift 20s ease-in-out infinite;
+            }
+
+            /* Background animation keyframes */
+            @keyframes backgroundShift {
+
+                0%,
+                100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.7;
+                }
+            }
+
+            /* ================================
+           LAYOUT CONTAINER
+           ================================ */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
+
+            /* ================================
+           HEADER STYLES
+           ================================ */
+            header {
+                text-align: center;
+                padding: 4rem 0;
+                position: relative;
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 2;
+            }
+
+            /* ================================
+           PROFILE PICTURE STYLES
+           ================================ */
+            .profile-picture {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                margin: 0 auto 2rem;
+                position: relative;
+                overflow: hidden;
+                border: 4px solid transparent;
+                background: var(--gradient);
+                padding: 4px;
+                animation: fadeInUp 1s ease-out;
+                transition: all var(--transition-medium) ease;
+            }
+
+            /* Profile picture hover effects */
+            .profile-picture:hover {
+                transform: scale(1.05);
+                box-shadow: 0 15px 35px rgba(79, 172, 254, 0.4);
+            }
+
+            .profile-picture img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                background: var(--card-bg);
+                display: block;
+            }
+
+            /* Fallback placeholder when no image is available */
+            .profile-picture-placeholder {
+                width: 100%;
+                height: 100%;
+                background: var(--gradient);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3rem;
+                font-weight: 700;
+                color: white;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            /* ================================
+           HEADER TEXT STYLES
+           ================================ */
+            header h1 {
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                /* Responsive font size */
+                font-weight: 700;
+                margin-bottom: 1rem;
+                background: var(--gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: fadeInUp 1s ease-out 0.2s both;
+            }
+
+            header .subtitle {
+                font-size: clamp(1.1rem, 2vw, 1.3rem);
+                /* Responsive subtitle */
+                color: var(--text-secondary);
+                margin-bottom: 2rem;
+                font-weight: 400;
+                animation: fadeInUp 1s ease-out 0.4s both;
+            }
+
+            /* ================================
+           ANIMATIONS
+           ================================ */
+            /* Fade in from bottom animation */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            /* ================================
+           SOCIAL LINKS STYLES
+           ================================ */
+            .socials {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                margin: 2rem 0;
+                animation: fadeInUp 1s ease-out 0.6s both;
+            }
+
+            .social-link {
+                color: var(--text-secondary);
+                text-decoration: none;
+                padding: 0.75rem 1.5rem;
+                border: 1px solid var(--border-color);
+                border-radius: 50px;
+                transition: all var(--transition-fast) ease;
+                font-weight: 500;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                white-space: nowrap;
+            }
+
+            /* Social link icon styles */
+            .social-link i {
+                font-size: 1.1em;
+                transition: transform var(--transition-fast) ease;
+            }
+
+            /* Sliding background effect for social links */
+            .social-link::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: var(--gradient);
+                transition: left var(--transition-fast) ease;
+                z-index: -1;
+            }
+
+            /* Social link hover effects */
+            .social-link:hover {
+                color: var(--text-primary);
+                border-color: var(--accent-color);
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+            }
+
+            .social-link:hover i {
+                transform: scale(1.1);
+            }
+
+            .social-link:hover::before {
+                left: 0;
+            }
+
+            /* ================================
+           SECTION STYLES
+           ================================ */
+            section {
+                margin-bottom: 4rem;
+                animation: fadeInUp 1s ease-out 0.8s both;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin-bottom: 3rem;
+                text-align: center;
+                position: relative;
+            }
+
+            /* Decorative underline for section titles */
+            .section-title::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 3px;
+                background: var(--gradient);
+                border-radius: 2px;
+            }
+
+            /* ================================
+           ABOUT SECTION
+           ================================ */
+            .about-content {
+                max-width: 800px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 1.1rem;
+                color: var(--text-secondary);
+                line-height: 1.8;
+            }
+
+            /* ================================
+           PROJECTS GRID
+           ================================ */
+            .projects-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+            .project-card {
+                background: var(--card-bg);
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: var(--shadow);
+                transition: all var(--transition-medium) ease;
+                border: 1px solid var(--border-color);
+                position: relative;
+            }
+
+            /* Top gradient line that appears on hover */
+            .project-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: var(--gradient);
+                transform: scaleX(0);
+                transition: transform var(--transition-fast) ease;
+            }
+
+            /* Project card hover effects */
+            .project-card:hover {
+                transform: translateY(-8px);
+                box-shadow: var(--shadow-hover);
+                border-color: var(--accent-color);
+            }
+
+            .project-card:hover::before {
+                transform: scaleX(1);
+            }
+
+            /* ================================
+           PROJECT IMAGE STYLES
+           ================================ */
+            .project-image {
+                position: relative;
+                width: 100%;
+                padding-top: 56.25%;
+                /* 16:9 aspect ratio */
+                overflow: hidden;
+                background: var(--gradient);
+            }
+
+            .project-image img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            /* ================================
+           PROJECT CONTENT STYLES
+           ================================ */
+            .project-content {
+                padding: 1.5rem;
+            }
+
+            .project-title {
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                color: var(--text-primary);
+            }
+
+            .project-description {
+                color: var(--text-secondary);
+                margin-bottom: 1rem;
+                font-size: 0.95rem;
+            }
+
+            .project-link {
+                color: var(--accent-color);
+                text-decoration: none;
+                font-weight: 500;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                transition: all var(--transition-fast) ease;
+            }
+
+            /* Animated arrow for project links */
+            .project-link:hover {
+                color: var(--accent-hover);
+                transform: translateX(5px);
+            }
+
+            .project-link::after {
+                content: '→';
+                transition: transform var(--transition-fast) ease;
+            }
+
+            .project-link:hover::after {
+                transform: translateX(3px);
+            }
+
+            /* ================================
+           SKILLS SECTION
+           ================================ */
+            .skills-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+
+            .skill-item {
+                background: var(--card-bg);
+                padding: 1.5rem;
+                border-radius: 12px;
+                text-align: center;
+                border: 1px solid var(--border-color);
+                transition: all var(--transition-fast) ease;
+            }
+
+            /* Skill item hover effects */
+            .skill-item:hover {
+                transform: translateY(-3px);
+                border-color: var(--accent-color);
+                box-shadow: 0 5px 20px rgba(79, 172, 254, 0.2);
+            }
+
+            .skill-name {
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            .skill-level {
+                color: var(--text-secondary);
+                font-size: 0.9rem;
+            }
+
+            /* ================================
+           CONTACT SECTION
+           ================================ */
+            .contact-content {
+                max-width: 600px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .contact-text {
+                font-size: 1.1rem;
+                color: var(--text-secondary);
+                margin-bottom: 2rem;
+            }
+
+            .contact-methods {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .contact-method {
+                background: var(--card-bg);
+                padding: 2rem;
+                border-radius: 12px;
+                border: 1px solid var(--border-color);
+                transition: all var(--transition-fast) ease;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            /* Contact method hover effects */
+            .contact-method:hover {
+                transform: translateY(-3px);
+                border-color: var(--accent-color);
+                box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
+            }
+
+            .contact-method h3 {
+                color: var(--accent-color);
+                margin-bottom: 0.5rem;
+            }
+
+            /* ================================
+           FOOTER STYLES
+           ================================ */
+            footer {
+                text-align: center;
+                padding: 3rem 0;
+                border-top: 1px solid var(--border-color);
+                margin-top: 4rem;
+                color: var(--text-muted);
+            }
+
+            /* ================================
+           FADE-IN ANIMATION UTILITIES
+           ================================ */
+            .fade-in {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUp 0.6s ease-out forwards;
+            }
+
+            /* Staggered animation delays */
+            .fade-in:nth-child(1) {
+                animation-delay: 0.1s;
+            }
+
+            .fade-in:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+
+            .fade-in:nth-child(3) {
+                animation-delay: 0.3s;
+            }
+
+            .fade-in:nth-child(4) {
+                animation-delay: 0.4s;
+            }
+
+            /* ================================
+           RESPONSIVE DESIGN
+           ================================ */
+
+            /* Tablet styles */
+            @media (max-width: 768px) {
+                .container {
+                    padding: 0 1rem;
+                }
+
+                header {
+                    padding: 3rem 0;
+                }
+
+                .socials {
+                    gap: 1rem;
+                }
+
+                .social-link {
+                    padding: 0.6rem 1.2rem;
+                    font-size: 0.9rem;
+                }
+
+                .projects-grid {
+                    grid-template-columns: 1fr;
+                    gap: 1.5rem;
+                }
+
+                .section-title {
+                    font-size: 2rem;
+                }
+            }
+
+            /* Mobile styles */
+            @media (max-width: 480px) {
+                .social-link {
+                    padding: 0.5rem 1rem;
+                    font-size: 0.85rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- ================================
+             HEADER SECTION
+             ================================ -->
+            <header>
+                <div class="hero-content">
+                    <!-- Profile picture with gradient border -->
+                    <div class="profile-picture">
+                        <img src="images/H.webp" alt="Hazem Abdelhamid Profile Picture">
+                    </div>
+
+                    <!-- Main title with gradient text effect -->
+                    <h1>Hazem Abdelhamid</h1>
+                    <p class="subtitle">Multi-skilled Developer | Web & IT Solutions</p>
+
+                    <!-- Social links with hover effects -->
+                    <div class="socials">
+                        <a href="mailto:hazem.a.egy@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=201558245210" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://github.com/HazemThePro" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://instagram.com/hazem.a.egy" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://x.com/Hazem_A_Eg" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ================================
+             ABOUT SECTION
+             ================================ -->
+            <section id="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>I'm a passionate developer with expertise in web development and IT solutions. I love creating modern, responsive websites and applications that provide exceptional user experiences. My goal is to deliver high-quality solutions that meet and exceed client expectations.</p>
+                </div>
+            </section>
+
+            <!-- ================================
+             SKILLS SECTION
+             ================================ -->
+            <section id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item fade-in">
+                        <div class="skill-name">HTML5 & CSS3</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item fade-in">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                    <div class="skill-item fade-in">
+                        <div class="skill-name">Responsive Design</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-item fade-in">
+                        <div class="skill-name">Web Development</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================================
+             PROJECTS SECTION
+             ================================ -->
+            <section id="projects">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1: Al Baloot Al Sagheer Nursery -->
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <img src="images/baloot.webp" alt="Al Baloot Al Sagheer Website Cover">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Al Baloot Al Sagheer Nursery</h3>
+                            <p class="project-description">A modern website presenting early childhood education, interactive learning, and trusted nursery services.</p>
+                            <a href="https://www.albalootalsagheer.net/" class="project-link" target="_blank" rel="noopener">Visit Website</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Al Horreya Language Schools -->
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <img src="images/hls.webp" alt="Al Horreya Language Schools Website Cover">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Al Horreya Language Schools</h3>
+                            <p class="project-description">Educational institution website featuring course information and enrollment systems.</p>
+                            <a href="https://www.hls-eg.com/" class="project-link" target="_blank" rel="noopener">Visit Website</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Al Najjar Fiberglass -->
+                    <div class="project-card fade-in">
+                        <div class="project-image">
+                            <img src="images/najjar.webp" alt="Al Najjar Fiberglass Website Cover">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Al Najjar Fiberglass</h3>
+                            <p class="project-description">Industrial website showcasing fiberglass products and manufacturing capabilities.</p>
+                            <a href="https://najjar.odoo.com/" class="project-link" target="_blank" rel="noopener">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================================
+             CONTACT SECTION
+             ================================ -->
+            <section id="contact">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-text">Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.</p>
+                    <div class="contact-methods">
+                        <!-- Email contact method -->
+                        <a href="mailto:hazem.a.egy@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope" style="font-size: 1.5em; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
+                            <h3>Email</h3>
+                            <p>hazem.a.egy@gmail.com</p>
+                        </a>
+                        <!-- WhatsApp contact method -->
+                        <a href="https://api.whatsapp.com/send/?phone=201558245210" class="contact-method" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp" style="font-size: 1.5em; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
+                            <h3>WhatsApp</h3>
+                            <p>Quick and direct messaging</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================================
+         FOOTER
+         ================================ -->
+        <footer>
+            <div class="container">
+                <p>Designed with passion by Hazem Abdelhamid &copy; 2025. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            /* ================================
+           JAVASCRIPT FUNCTIONALITY
+           ================================ */
+
+            // Smooth scrolling for internal anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            /* ================================
+               INTERSECTION OBSERVER FOR ANIMATIONS
+               ================================ */
+
+            // Configuration for intersection observer
+            const observerOptions = {
+                threshold: 0.1, // Trigger when 10% of element is visible
+                rootMargin: '0px 0px -50px 0px' // Trigger 50px before element enters viewport
+            };
+
+            // Create intersection observer for fade-in animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Trigger fade-in animation when element enters viewport
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all elements with fade-in class
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            /* ================================
+               PAGE LOADING STATE
+               ================================ */
+
+            // Add loaded class to body when page is fully loaded
+            window.addEventListener('load', () => {
+                document.body.classList.add('loaded');
+            });
+
+            /* ================================
+               ENHANCED PROJECT CARD INTERACTIONS
+               ================================ */
+
+            // Add enhanced hover effects for project cards
+            document.querySelectorAll('.project-card').forEach(card => {
+                // Mouse enter event - enhanced lift effect
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-12px) scale(1.02)';
+                });
+
+                // Mouse leave event - return to normal state
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        </script>
+    </body>
+
+</html>
