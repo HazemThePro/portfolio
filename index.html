@@ -5,26 +5,26 @@
     <!-- Meta Information for SEO and Performance -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional Web Developer Portfolio - Hazem Abdelhamid specializes in creating responsive websites and web applications with modern technologies like HTML5, CSS3, and JavaScript. Explore featured projects and get in touch for your next digital solution." />
-    <meta name="keywords" content="web developer, portfolio, HTML5, CSS3, JavaScript, responsive design, web development, frontend developer, Hazem Abdelhamid, website design, web applications, IT solutions" />
+    <meta name="description" content="Hazem Abdelhamid: A Technology Solutions Specialist & Frontend Developer. I provide comprehensive web development, SEO optimization, and IT solutions, including CMS implementation and system integration, to build high-performance digital assets." />
+    <meta name="keywords" content="frontend developer, technology solutions, IT services, web development, SEO optimization, responsive design, portfolio creation, device optimization, system integration, CMS, Odoo, Hazem Abdelhamid" />
     <meta name="author" content="Hazem Abdelhamid" />
     <meta name="robots" content="index, follow" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hazemthepro.github.io/portfolio/" />
-    <meta property="og:title" content="Hazem Abdelhamid - Professional Web Developer Portfolio" />
-    <meta property="og:description" content="Explore the portfolio of Hazem Abdelhamid, a skilled web developer specializing in creating responsive websites and web applications with modern technologies." />
+    <meta property="og:title" content="Hazem Abdelhamid — Technology Solutions & Frontend Development" />
+    <meta property="og:description" content="Expert in crafting high-performance websites, web applications, and integrated IT solutions. Let's build your next digital success." />
     <meta property="og:image" content="https://hazemthepro.github.io/portfolio/images/H.webp" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://hazemthepro.github.io/portfolio/" />
-    <meta property="twitter:title" content="Hazem Abdelhamid - Professional Web Developer Portfolio" />
-    <meta property="twitter:description" content="Explore the portfolio of Hazem Abdelhamid, a skilled web developer specializing in creating responsive websites and web applications with modern technologies." />
+    <meta property="twitter:title" content="Hazem Abdelhamid — Technology Solutions & Frontend Development" />
+    <meta property="twitter:description" content="Expert in crafting high-performance websites, web applications, and integrated IT solutions. Let's build your next digital success." />
     <meta property="twitter:image" content="https://hazemthepro.github.io/portfolio/images/H.webp" />
     
-    <title>Hazem Abdelhamid - Professional Web Developer Portfolio | HTML5 CSS3 JavaScript</title>
+    <title>Hazem Abdelhamid — Technology Solutions & Frontend Development</title>
 
     <!-- Google tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8FDW51HZX"></script>
@@ -47,7 +47,8 @@
       "name": "Hazem Abdelhamid",
       "url": "https://hazemthepro.github.io/portfolio/",
       "image": "https://hazemthepro.github.io/portfolio/images/H.webp",
-      "jobTitle": "Frontend Developer",
+      "jobTitle": "Technology Solutions Specialist & Frontend Developer",
+      "description": "I provide comprehensive web development, SEO optimization, and IT solutions, including CMS implementation and system integration, to build high-performance digital assets.",
       "worksFor": {
         "@type": "Organization",
         "name": "Hazem Abdelhamid"
@@ -246,6 +247,9 @@
             margin-bottom: 2rem;
             font-weight: 400;
             animation: fadeInUp 1s ease-out 0.4s both;
+            max-width: 700px; /* Constrain width for readability */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /* ================================
@@ -328,13 +332,13 @@
        SECTION STYLES
        ================================ */
         section {
-            margin-bottom: 4rem;
+            margin-bottom: 5rem; /* Increased margin for better separation */
             animation: fadeInUp 1s ease-out 0.8s both;
         }
 
         .section-title {
-            font-size: clamp(2rem, 6vw, 2.5rem); /* IMPROVED: Responsive clamp */
-            font-weight: 600;
+            font-size: clamp(2rem, 6vw, 2.8rem); /* Slightly larger title */
+            font-weight: 700;
             margin-bottom: 3rem;
             text-align: center;
             position: relative;
@@ -363,6 +367,12 @@
             color: var(--text-secondary);
             line-height: 1.8;
         }
+        
+        .about-content strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
 
         /* ================================
        PROJECTS GRID
@@ -382,6 +392,8 @@
             transition: all var(--transition-medium) ease;
             border: 1px solid var(--border-color);
             position: relative;
+            display: flex; /* Make card a flex container */
+            flex-direction: column; /* Stack content vertically */
         }
 
         .project-card::before {
@@ -437,6 +449,9 @@
        ================================ */
         .project-content {
             padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Allow content to grow and fill space */
         }
 
         .project-title {
@@ -450,13 +465,14 @@
             color: var(--text-secondary);
             margin-bottom: 1rem;
             font-size: 0.95rem;
+            flex-grow: 1; /* Push tags/link to the bottom */
         }
         
         .project-tech {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem; /* Increased margin */
         }
 
         .tech-tag {
@@ -476,6 +492,7 @@
             align-items: center;
             gap: 0.5rem;
             transition: all var(--transition-fast) ease;
+            margin-top: auto; /* Align to the bottom */
         }
 
         .project-link:hover {
@@ -497,7 +514,7 @@
        ================================ */
         .skills-categories {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
             gap: 3rem;
             margin-top: 2rem;
         }
@@ -508,6 +525,8 @@
             color: var(--accent-color);
             margin-bottom: 1.5rem;
             text-align: center;
+            border-bottom: 2px solid var(--border-color); /* Add separator */
+            padding-bottom: 1rem;
         }
 
         .skills-container {
@@ -732,15 +751,14 @@
         <header id="top">
             <div class="hero-content">
                 <div class="profile-picture">
-                    <!-- IMPROVED: Responsive images with <picture> tag -->
                     <picture>
                         <source srcset="images/H-small.webp" media="(max-width: 480px)">
-                        <img src="images/H.webp" alt="Hazem Abdelhamid - Professional Web Developer Profile Picture" width="180" height="180" loading="eager">
+                        <img src="images/H.webp" alt="Hazem Abdelhamid - Technology Solutions Specialist" width="180" height="180" loading="eager">
                     </picture>
                 </div>
 
                 <h1>Hazem Abdelhamid</h1>
-                <p class="subtitle">Frontend Developer & Web Solutions Specialist</p>
+                <p class="subtitle">I design and build powerful digital experiences and provide comprehensive technology services to help businesses thrive.</p>
 
                 <div class="socials">
                     <a href="mailto:hazem.a.egy@gmail.com" class="social-link" onclick="trackEvent('Contact', 'Email Click', 'Header')" aria-label="Send email to Hazem Abdelhamid">
@@ -751,7 +769,6 @@
                         <i class="fab fa-github" aria-hidden="true"></i>
                         <span>GitHub</span>
                     </a>
-                    <!-- ADDED: LinkedIn Profile -->
                     <a href="https://www.linkedin.com/in/hazemabdelhamid/" class="social-link" target="_blank" rel="noopener me" onclick="trackEvent('Social', 'LinkedIn Click', 'Header')" aria-label="View LinkedIn profile">
                         <i class="fab fa-linkedin" aria-hidden="true"></i>
                         <span>LinkedIn</span>
@@ -779,8 +796,8 @@
             <section id="about">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
-                    <!-- IMPROVED: More engaging "About Me" text -->
-                    <p>I'm a passionate Frontend Developer dedicated to building high-performance, responsive, and accessible digital solutions. With a strong foundation in HTML5, CSS3, and JavaScript, I specialize in transforming ideas into clean, elegant, and user-centric web experiences. I'm particularly interested in the intersection of design and performance, always striving to write maintainable code that meets and exceeds client expectations. Let's create something exceptional together.</p>
+                    <p>As a multifaceted <strong>Frontend Developer</strong> and <strong>Technology Solutions Specialist</strong>, I deliver comprehensive digital and IT services designed to elevate your online presence and streamline your operations. My expertise lies in architecting responsive, high-performance websites and web applications, ensuring an exceptional user experience through clean, maintainable code and a focus on accessibility (A11y).</p>
+                    <p>Beyond bespoke <strong>web development</strong> and <strong>portfolio creation</strong>, I provide robust <strong>IT solutions</strong>, including seamless CMS and Odoo implementations, meticulous <strong>device optimization</strong>, and strategic <strong>system integration</strong>. By grounding every project in <strong>SEO best practices</strong> and a commitment to peak web performance, I create digital products that are not only visually compelling but also highly discoverable. Whether you need a powerful web application, an optimized IT infrastructure, or ongoing <strong>technology services</strong> and support, I am dedicated to providing solutions that are scalable, reliable, and engineered for success.</p>
                 </div>
             </section>
 
@@ -788,41 +805,33 @@
              SKILLS SECTION
              ================================ -->
             <section id="skills">
-                <h2 class="section-title">My Expertise</h2>
-                <!-- IMPROVED: Categorized skills section -->
+                <h2 class="section-title">Core Competencies & Services</h2>
                 <div class="skills-categories">
                     <div class="skills-category">
-                        <h3>Languages & Core Technologies</h3>
+                        <h3>Frontend Development</h3>
                         <div class="skills-container">
-                            <div class="skill-item fade-in" tabindex="0">
-                                <div class="skill-name">HTML5</div>
-                            </div>
-                            <div class="skill-item fade-in" tabindex="0">
-                                <div class="skill-name">CSS3 & Flexbox/Grid</div>
-                            </div>
-                            <div class="skill-item fade-in" tabindex="0">
-                                <div class="skill-name">JavaScript (ES6+)</div>
-                            </div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">HTML5</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">CSS3 (Flexbox/Grid)</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">JavaScript (ES6+)</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">Responsive Design</div></div>
                         </div>
                     </div>
                     <div class="skills-category">
-                        <h3>Tools & Concepts</h3>
+                        <h3>Digital Strategy & Performance</h3>
                         <div class="skills-container">
-                            <div class="skill-item fade-in" tabindex="0">
-                                <div class="skill-name">Responsive Design</div>
-                            </div>
-                            <div class="skill-item fade-in" tabindex="0">
-                                <div class="skill-name">Web Performance</div>
-                            </div>
-                            <div class="skill-item fade-in" tabindex="0">
-                                <div class="skill-name">SEO Best Practices</div>
-                            </div>
-                            <div class="skill-item fade-in" tabindex="0">
-                                <div class="skill-name">Git & GitHub</div>
-                            </div>
-                            <div class="skill-item fade-in" tabindex="0">
-                                <div class="skill-name">Accessibility (A11y)</div>
-                            </div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">SEO Optimization</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">Web Performance</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">Accessibility (A11y)</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">Git & Version Control</div></div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>IT & Business Solutions</h3>
+                        <div class="skills-container">
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">CMS/Odoo Implementation</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">System Integration</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">Device Optimization</div></div>
+                            <div class="skill-item fade-in" tabindex="0"><div class="skill-name">Technical Support</div></div>
                         </div>
                     </div>
                 </div>
@@ -836,16 +845,14 @@
                 <div class="projects-grid">
                     <div class="project-card fade-in" role="article" aria-labelledby="project1-title">
                         <div class="project-image">
-                            <!-- IMPROVED: Responsive images with <picture> tag -->
                             <picture>
                                 <source srcset="images/baloot-mobile.webp" media="(max-width: 480px)">
-                                <img src="images/baloot.webp" alt="Al Baloot Al Sagheer Nursery Website - Responsive Design Showcase" width="600" height="338" loading="lazy">
+                                <img src="images/baloot.webp" alt="Responsive website design for Al Baloot Al Sagheer Nursery" width="600" height="338" loading="lazy">
                             </picture>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title" id="project1-title">Al Baloot Al Sagheer Nursery</h3>
-                            <p class="project-description">A modern, responsive website for a nursery, presenting early childhood education services and interactive learning platforms for trusted childcare solutions.</p>
-                            <!-- IMPROVED: Added tech used tags -->
+                            <p class="project-description">Developed a modern, responsive website to serve as an engaging and informative digital portal for parents, showcasing early childhood education services and interactive learning platforms.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">HTML5</span>
                                 <span class="tech-tag">CSS3</span>
@@ -857,16 +864,14 @@
 
                     <div class="project-card fade-in" role="article" aria-labelledby="project2-title">
                         <div class="project-image">
-                             <!-- IMPROVED: Responsive images with <picture> tag -->
                             <picture>
                                 <source srcset="images/hls-mobile.webp" media="(max-width: 480px)">
-                                <img src="images/hls.webp" alt="Al Horreya Language Schools Website - Educational Platform Design" width="600" height="338" loading="lazy">
+                                <img src="images/hls.webp" alt="Educational platform website for Al Horreya Language Schools" width="600" height="338" loading="lazy">
                             </picture>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title" id="project2-title">Al Horreya Language Schools</h3>
-                            <p class="project-description">An educational institution's website featuring course information and enrollment systems, developed for an optimal cross-device user experience.</p>
-                             <!-- IMPROVED: Added tech used tags -->
+                            <p class="project-description">Engineered a comprehensive digital platform for an educational institution, featuring streamlined course information and enrollment systems, optimized for a seamless cross-device user experience.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">HTML5</span>
                                 <span class="tech-tag">CSS3</span>
@@ -878,16 +883,14 @@
 
                     <div class="project-card fade-in" role="article" aria-labelledby="project3-title">
                         <div class="project-image">
-                             <!-- IMPROVED: Responsive images with <picture> tag -->
                             <picture>
                                 <source srcset="images/najjar-mobile.webp" media="(max-width: 480px)">
-                                <img src="images/najjar.webp" alt="Al Najjar Fiberglass Website - Industrial Company Web Design" width="600" height="338" loading="lazy">
+                                <img src="images/najjar.webp" alt="B2B company website for Al Najjar Fiberglass using Odoo CMS" width="600" height="338" loading="lazy">
                             </picture>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title" id="project3-title">Al Najjar Fiberglass</h3>
-                            <p class="project-description">An industrial B2B company website showcasing fiberglass products and manufacturing capabilities with a focus on responsive layout and performance.</p>
-                             <!-- IMPROVED: Added tech used tags -->
+                            <p class="project-description">Implemented a professional B2B industrial website using Odoo CMS, delivering a high-performance solution for showcasing fiberglass products and manufacturing capabilities.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Odoo CMS</span>
                                 <span class="tech-tag">HTML5</span>
@@ -903,13 +906,13 @@
              CONTACT SECTION
              ================================ -->
             <section id="contact">
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title">Let's Build Together</h2>
                 <div class="contact-content">
-                    <p class="contact-text">Ready to start your next project or have a question? I'm here to help bring your ideas to life.</p>
+                    <p class="contact-text">Whether you need a new website, an IT solution, or have a question about technology, I'm ready to help you achieve your goals. Reach out to start the conversation.</p>
                     <div class="contact-methods">
                         <div class="contact-method email-contact" onclick="revealEmail(this); trackEvent('Contact', 'Email Reveal', 'Contact Section')" role="button" tabindex="0" aria-label="Reveal email address">
                             <i class="fas fa-envelope" style="font-size: 1.5em; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
-                            <h3>Email</h3>
+                            <h3>Email Me</h3>
                             <p class="email-placeholder">
                                 <span class="show-email-btn">
                                     Click to Reveal
@@ -926,8 +929,8 @@
                         </div>
                         <a href="https://api.whatsapp.com/send/?phone=201558245210" class="contact-method" target="_blank" rel="noopener" onclick="trackEvent('Contact', 'WhatsApp Click', 'Contact Section')" aria-label="Contact via WhatsApp">
                             <i class="fab fa-whatsapp" style="font-size: 1.5em; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
-                            <h3>WhatsApp</h3>
-                            <p>Quick & direct messaging</p>
+                            <h3>Message on WhatsApp</h3>
+                            <p>For quick & direct messaging</p>
                         </a>
                     </div>
                 </div>
@@ -940,7 +943,7 @@
      ================================ -->
     <footer>
         <div class="container">
-            <p>Designed with passion by Hazem Abdelhamid &copy; 2025. All rights reserved.</p>
+            <p>Designed & Developed with passion by Hazem Abdelhamid &copy; 2025</p>
             <p><a href="#top" id="backToTop" class="footer-link">Back to Top</a></p>
         </div>
     </footer>
