@@ -6,44 +6,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Hazem Abdelhamid: A Technology Solutions Specialist & Frontend Developer. I provide comprehensive web development, SEO optimization, and IT solutions, including CMS implementation and system integration, to build high-performance digital assets." />
-    <meta name="keywords" content="frontend developer, technology solutions, IT services, web development, SEO optimization, responsive design, portfolio creation, device optimization, system integration, CMS, Odoo, Hazem Abdelhamid" />
+    <meta name="keywords" content="frontend developer, technology solutions, IT services, web development, SEO optimization, responsive design, website creation, device optimization, system integration, CMS, Odoo, Hazem Abdelhamid" />
     <meta name="author" content="Hazem Abdelhamid" />
     <meta name="robots" content="index, follow" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hazemthepro.github.io/portfolio/" />
+    <meta property="og:url" content="https://hazem-eg.pages.dev/" />
     <meta property="og:title" content="Hazem Abdelhamid — Technology Solutions & Frontend Development" />
     <meta property="og:description" content="Expert in crafting high-performance websites, web applications, and integrated IT solutions. Let's build your next digital success." />
-    <meta property="og:image" content="https://hazemthepro.github.io/portfolio/images/H.webp" />
+    <meta property="og:image" content="https://hazem-eg.pages.dev/images/H.webp" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://hazemthepro.github.io/portfolio/" />
+    <meta property="twitter:url" content="https://hazem-eg.pages.dev/" />
     <meta property="twitter:title" content="Hazem Abdelhamid — Technology Solutions & Frontend Development" />
     <meta property="twitter:description" content="Expert in crafting high-performance websites, web applications, and integrated IT solutions. Let's build your next digital success." />
-    <meta property="twitter:image" content="https://hazemthepro.github.io/portfolio/images/H.webp" />
+    <meta property="twitter:image" content="https://hazem-eg.pages.dev/images/H.webp" />
     
     <title>Hazem Abdelhamid — Technology Solutions & Frontend Development</title>
 
-    <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8FDW51HZX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-L8FDW51HZX');
-    </script>
-    
     <!-- Schema.org Markup for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Hazem Abdelhamid",
-      "url": "https://hazemthepro.github.io/portfolio/",
-      "image": "https://hazemthepro.github.io/portfolio/images/H.webp",
+      "url": "https://hazem-eg.pages.dev/",
+      "image": "https://hazem-eg.pages.dev/images/H.webp",
       "jobTitle": "Technology Solutions Specialist & Frontend Developer",
       "description": "I provide comprehensive web development, SEO optimization, and IT solutions, including CMS implementation and system integration, to build high-performance digital assets.",
       "worksFor": {
@@ -62,7 +52,7 @@
     <!-- Preconnect to external resources for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     
     <!-- Prefetch key resources -->
     <link rel="preload" href="images/H.webp" as="image">
@@ -70,671 +60,13 @@
 
     <!-- External stylesheets -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Load Font Awesome asynchronously to prevent render-blocking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
-    <style>
-        /* ================================
-       CSS CUSTOM PROPERTIES (VARIABLES)
-       ================================ */
-        :root {
-            --primary-bg: #0a0e1a;
-            --secondary-bg: #1a1f3a;
-            --accent-color: #4facfe;
-            --accent-hover: #00f2fe;
-            --card-bg: #1e2749;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a9c0;
-            --text-muted: #6b7280;
-            --border-color: #2d3748;
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.4);
-            --transition-fast: 0.3s;
-            --transition-medium: 0.4s;
-        }
-
-        /* ================================
-       GLOBAL RESET AND BASE STYLES
-       ================================ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--primary-bg);
-            color: var(--text-primary);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-
-        /* ================================
-       TYPOGRAPHY AND SPACING REFINEMENTS
-       ================================ */
-        h1, h2, h3 {
-            line-height: 1.3;
-        }
-
-        .about-content p, .contact-text {
-            margin-bottom: 1.5rem;
-        }
-
-        /* ================================
-       ACCESSIBILITY: SKIP TO CONTENT LINK
-       ================================ */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--accent-color);
-            color: white;
-            padding: 8px 12px;
-            z-index: 1000;
-            transition: top 0.3s ease-out;
-            border-bottom-right-radius: 8px;
-            font-weight: 500;
-            text-decoration: none;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-
-        /* ================================
-       ANIMATED BACKGROUND
-       ================================ */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:
-                radial-gradient(circle at 20% 50%, rgba(79, 172, 254, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(0, 242, 254, 0.05) 0%, transparent 50%);
-            z-index: -1;
-            animation: backgroundShift 20s ease-in-out infinite;
-        }
-
-        @keyframes backgroundShift {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        /* ================================
-       LAYOUT CONTAINER
-       ================================ */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* ================================
-       HEADER STYLES
-       ================================ */
-        header {
-            text-align: center;
-            padding: 4rem 0;
-            position: relative;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        /* ================================
-       PROFILE PICTURE STYLES
-       ================================ */
-        .profile-picture {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            margin: 0 auto 2rem;
-            position: relative;
-            overflow: hidden;
-            border: 4px solid transparent;
-            background: var(--gradient);
-            padding: 4px;
-            animation: fadeInUp 1s ease-out;
-            transition: all var(--transition-medium) ease;
-        }
-
-        .profile-picture:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 35px rgba(79, 172, 254, 0.4);
-        }
-
-        .profile-picture img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            background: var(--card-bg);
-            display: block;
-        }
-
-        /* ================================
-       HEADER TEXT STYLES
-       ================================ */
-        header h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: var(--gradient);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: fadeInUp 1s ease-out 0.2s both;
-        }
-
-        header .subtitle {
-            font-size: clamp(1.1rem, 2.5vw, 1.3rem); /* IMPROVED: Responsive clamp */
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            font-weight: 400;
-            animation: fadeInUp 1s ease-out 0.4s both;
-            max-width: 700px; /* Constrain width for readability */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* ================================
-       ANIMATIONS
-       ================================ */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* ================================
-       SOCIAL LINKS STYLES
-       ================================ */
-        .socials {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin: 2rem 0;
-            animation: fadeInUp 1s ease-out 0.6s both;
-        }
-
-        .social-link {
-            color: var(--text-secondary);
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border: 1px solid var(--border-color);
-            border-radius: 50px;
-            transition: all var(--transition-fast) ease;
-            font-weight: 500;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            white-space: nowrap;
-        }
-
-        .social-link i {
-            font-size: 1.1em;
-            transition: transform var(--transition-fast) ease;
-        }
-
-        .social-link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: var(--gradient);
-            transition: left var(--transition-fast) ease;
-            z-index: -1;
-        }
-
-        /* === UPDATE: UI Interaction Requirement === */
-        .social-link:hover {
-            color: var(--text-primary);
-            border: 2px solid var(--accent-color); /* Thicker border on hover */
-            padding: calc(0.75rem - 1px) calc(1.5rem - 1px); /* Adjust padding to prevent size jump */
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
-        }
-
-        .social-link:hover i {
-            transform: scale(1.1);
-        }
-
-        .social-link:hover::before {
-            left: 0;
-        }
-
-        /* ================================
-       SECTION STYLES
-       ================================ */
-        section {
-            margin-bottom: 5rem; /* Increased margin for better separation */
-            animation: fadeInUp 1s ease-out 0.8s both;
-        }
-
-        .section-title {
-            font-size: clamp(2rem, 6vw, 2.8rem); /* Slightly larger title */
-            font-weight: 700;
-            margin-bottom: 3rem;
-            text-align: center;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background: var(--gradient);
-            border-radius: 2px;
-        }
-
-        /* ================================
-       ABOUT SECTION
-       ================================ */
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            line-height: 1.8;
-        }
-        
-        .about-content strong {
-            color: var(--accent-color);
-            font-weight: 600;
-        }
-
-
-        /* ================================
-       PROJECTS GRID
-       ================================ */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .project-card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: all var(--transition-medium) ease;
-            border: 1px solid var(--border-color);
-            position: relative;
-            display: flex; /* Make card a flex container */
-            flex-direction: column; /* Stack content vertically */
-        }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--gradient);
-            transform: scaleX(0);
-            transition: transform var(--transition-fast) ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-hover);
-            border-color: var(--accent-color);
-        }
-
-        .project-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        /* ================================
-       PROJECT IMAGE STYLES
-       ================================ */
-        .project-image {
-            position: relative;
-            width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            overflow: hidden;
-            background: var(--gradient);
-        }
-
-        .project-image img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform var(--transition-medium) ease;
-        }
-
-        .project-card:hover .project-image img {
-            transform: scale(1.05);
-        }
-
-        /* ================================
-       PROJECT CONTENT STYLES
-       ================================ */
-        .project-content {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1; /* Allow content to grow and fill space */
-        }
-
-        .project-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-
-        .project-description {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            flex-grow: 1; /* Push tags/link to the bottom */
-        }
-        
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem; /* Increased margin */
-        }
-
-        .tech-tag {
-            background: rgba(79, 172, 254, 0.1);
-            color: var(--accent-color);
-            padding: 0.25rem 0.75rem;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .project-link {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: all var(--transition-fast) ease;
-            margin-top: auto; /* Align to the bottom */
-        }
-
-        .project-link:hover {
-            color: var(--accent-hover);
-            transform: translateX(5px);
-        }
-
-        .project-link::after {
-            content: '→';
-            transition: transform var(--transition-fast) ease;
-        }
-
-        .project-link:hover::after {
-            transform: translateX(3px);
-        }
-        
-        /* ================================
-       SKILLS SECTION
-       ================================ */
-        .skills-categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-
-        .skills-category h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--accent-color);
-            margin-bottom: 1.5rem;
-            text-align: center;
-            border-bottom: 2px solid var(--border-color); /* Add separator */
-            padding-bottom: 1rem;
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .skill-item {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            border: 1px solid var(--border-color);
-            transition: all var(--transition-fast) ease;
-        }
-
-        .skill-item:hover {
-            transform: translateY(-3px);
-            border-color: var(--accent-color);
-            box-shadow: 0 5px 20px rgba(79, 172, 254, 0.2);
-        }
-        
-        .skill-name {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-
-        /* ================================
-       CONTACT SECTION
-       ================================ */
-        .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .contact-text {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-        }
-
-        .contact-methods {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .contact-method {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            transition: all var(--transition-fast) ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .contact-method:hover {
-            transform: translateY(-3px);
-            border-color: var(--accent-color);
-            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
-        }
-
-        .contact-method h3 {
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .email-contact {
-            cursor: pointer;
-        }
-
-        .email-placeholder {
-            transition: all var(--transition-fast) ease;
-        }
-
-        .email-contact:not(.revealed):hover .email-placeholder {
-            color: var(--accent-color);
-        }
-
-        .show-email-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: rgba(79, 172, 254, 0.1);
-            border: 1px solid var(--accent-color);
-            border-radius: 6px;
-            transition: all var(--transition-fast) ease;
-            font-weight: 500;
-        }
-
-        .show-email-btn:hover {
-            background: rgba(79, 172, 254, 0.2);
-        }
-
-        .email-revealed {
-            animation: fadeInUp 0.5s ease-out;
-        }
-
-        .email-link {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color var(--transition-fast) ease;
-            cursor: pointer;
-        }
-
-        .email-link:hover {
-            color: var(--accent-hover);
-            text-decoration: underline;
-        }
-
-        .email-text {
-            font-family: 'Courier New', monospace;
-            background: rgba(79, 172, 254, 0.1);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            border: 1px solid rgba(79, 172, 254, 0.3);
-            word-break: break-all;
-        }
-        
-        /* ================================
-        FOOTER STYLES
-        ================================ */
-        footer {
-            text-align: center;
-            padding: 3rem 0;
-            border-top: 1px solid var(--border-color);
-            margin-top: 4rem;
-            color: var(--text-muted);
-        }
-        
-        .footer-link {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--accent-color);
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            display: inline-block;
-            margin-top: 1rem;
-        }
-        
-        .footer-link:hover,
-        .footer-link:focus {
-            background-color: rgba(79, 172, 254, 0.1);
-            color: var(--accent-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(79, 172, 254, 0.2);
-        }
-        
-        /* ================================
-        IMPLEMENTED: ENHANCED ACCESSIBILITY FOCUS STYLES
-        ================================ */
-        :is(a, button, .skill-item, .contact-method):focus-visible {
-            outline: 2px solid var(--accent-color);
-            outline-offset: 4px;
-            border-radius: 6px; /* Ensure outline follows element shape */
-        }
-        
-        /* ================================
-        MOBILE RESPONSIVENESS
-        ================================ */
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 1rem; /* Reduce padding on small screens */
-            }
-
-            header {
-                padding: 3rem 0;
-            }
-
-            .profile-picture {
-                width: 150px;
-                height: 150px;
-            }
-
-            .socials {
-                gap: 1rem; /* Reduce gap between social links */
-            }
-
-            .social-link {
-                padding: 0.6rem 1.2rem; /* Slightly smaller social links */
-            }
-            
-            /* Adjust social link on hover to prevent size jump */
-            .social-link:hover {
-                padding: calc(0.6rem - 1px) calc(1.2rem - 1px);
-            }
-
-            .section-title {
-                margin-bottom: 2rem;
-            }
-            
-            .projects-grid {
-                /* Adjust grid to better fit small screens */
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            }
-
-            .project-content {
-                padding: 1.2rem;
-            }
-        }
-
-    </style>
+    <style>:root{--primary-bg:#0a0e1a;--secondary-bg:#1a1f3a;--accent-color:#4facfe;--accent-hover:#00f2fe;--card-bg:#1e2749;--text-primary:#ffffff;--text-secondary:#a0a9c0;--text-muted:#6b7280;--border-color:#2d3748;--gradient:linear-gradient(135deg,#667eea 0%,#764ba2 100%);--shadow:0 10px 25px rgba(0,0,0,0.3);--shadow-hover:0 20px 40px rgba(0,0,0,0.4);--transition-fast:0.3s;--transition-medium:0.4s}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--primary-bg);color:var(--text-primary);line-height:1.7;overflow-x:hidden}h1,h2,h3{line-height:1.3}.about-content p,.contact-text{margin-bottom:1.5rem}.skip-link{position:absolute;top:-40px;left:0;background:#3385c6;color:white;padding:8px 12px;z-index:1000;transition:top 0.3s ease-out;border-bottom-right-radius:8px;font-weight:500;text-decoration:none}.skip-link:focus{top:0}body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 20% 50%,rgba(79,172,254,0.1) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(118,75,162,0.1) 0%,transparent 50%),radial-gradient(circle at 40% 80%,rgba(0,242,254,0.05) 0%,transparent 50%);z-index:-1;animation:backgroundShift 20s ease-in-out infinite}@keyframes backgroundShift{0%,100%{opacity:1}50%{opacity:.7}}.container{max-width:1200px;margin:0 auto;padding:0 2rem}header{text-align:center;padding:4rem 0;position:relative}.hero-content{position:relative;z-index:2}.profile-picture{width:180px;height:180px;border-radius:50%;margin:0 auto 2rem;position:relative;overflow:hidden;border:4px solid transparent;background:var(--gradient);padding:4px;animation:fadeInUp 1s ease-out;transition:all var(--transition-medium) ease}.profile-picture:hover{transform:scale(1.05);box-shadow:0 15px 35px rgba(79,172,254,0.4)}.profile-picture img{width:100%;height:100%;object-fit:cover;border-radius:50%;background:var(--card-bg);display:block}header h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:700;margin-bottom:1rem;background:var(--gradient);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:fadeInUp 1s ease-out 0.2s both}header .subtitle{font-size:clamp(1.1rem,2.5vw,1.3rem);color:var(--text-secondary);margin-bottom:2rem;font-weight:400;animation:fadeInUp 1s ease-out 0.4s both;max-width:700px;margin-left:auto;margin-right:auto}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}.socials{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin:2rem 0;animation:fadeInUp 1s ease-out 0.6s both}.social-link{color:var(--text-secondary);text-decoration:none;padding:.75rem 1.5rem;border:1px solid var(--border-color);border-radius:50px;transition:all var(--transition-fast) ease;font-weight:500;position:relative;overflow:hidden;display:flex;align-items:center;gap:.5rem;white-space:nowrap}.social-link i{font-size:1.1em;transition:transform var(--transition-fast) ease}.social-link::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:var(--gradient);transition:left var(--transition-fast) ease;z-index:-1}.social-link:hover{color:var(--text-primary);border:2px solid var(--accent-color);padding:calc(0.75rem - 1px) calc(1.5rem - 1px);transform:translateY(-2px);box-shadow:0 5px 15px rgba(79,172,254,0.3)}.social-link:hover i{transform:scale(1.1)}.social-link:hover::before{left:0}section{margin-bottom:5rem;animation:fadeInUp 1s ease-out 0.8s both}.section-title{font-size:clamp(2rem,6vw,2.8rem);font-weight:700;margin-bottom:3rem;text-align:center;position:relative}.section-title::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:60px;height:3px;background:var(--gradient);border-radius:2px}.about-content{max-width:800px;margin:0 auto;text-align:center;font-size:1.1rem;color:var(--text-secondary);line-height:1.8}.about-content strong{color:var(--accent-color);font-weight:600}.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;margin-top:2rem}.project-card{background:var(--card-bg);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);transition:all var(--transition-medium) ease;border:1px solid var(--border-color);position:relative;display:flex;flex-direction:column}.project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient);transform:scaleX(0);transition:transform var(--transition-fast) ease}.project-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);border-color:var(--accent-color)}.project-card:hover::before{transform:scaleX(1)}.project-image{position:relative;width:100%;padding-top:56.25%;overflow:hidden;background:var(--gradient)}.project-image img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--transition-medium) ease}.project-card:hover .project-image img{transform:scale(1.05)}.project-content{padding:1.5rem;display:flex;flex-direction:column;flex-grow:1}.project-title{font-size:1.3rem;font-weight:600;margin-bottom:.5rem;color:var(--text-primary)}.project-description{color:var(--text-secondary);margin-bottom:1rem;font-size:.95rem;flex-grow:1}.project-tech{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}.tech-tag{background:rgba(79,172,254,0.1);color:var(--accent-color);padding:.25rem .75rem;border-radius:50px;font-size:.8rem;font-weight:500}.project-link{color:var(--accent-color);text-decoration:none;font-weight:500;display:inline-flex;align-items:center;gap:.5rem;transition:all var(--transition-fast) ease;margin-top:auto}.project-link:hover{color:var(--accent-hover);transform:translateX(5px)}.project-link::after{content:'→';transition:transform var(--transition-fast) ease}.project-link:hover::after{transform:translateX(3px)}.skills-categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:3rem;margin-top:2rem}.skills-category h3{font-size:1.5rem;font-weight:600;color:var(--accent-color);margin-bottom:1.5rem;text-align:center;border-bottom:2px solid var(--border-color);padding-bottom:1rem}.skills-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}.skill-item{background:var(--card-bg);padding:1.5rem;border-radius:12px;text-align:center;border:1px solid var(--border-color);transition:all var(--transition-fast) ease}.skill-item:hover{transform:translateY(-3px);border-color:var(--accent-color);box-shadow:0 5px 20px rgba(79,172,254,0.2)}.skill-name{font-weight:600;font-size:1.1rem}.contact-content{max-width:600px;margin:0 auto;text-align:center}.contact-text{font-size:1.1rem;color:var(--text-secondary);margin-bottom:2rem}.contact-methods{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}.contact-method{background:var(--card-bg);padding:2rem;border-radius:12px;border:1px solid var(--border-color);transition:all var(--transition-fast) ease;text-decoration:none;color:inherit;display:block}.contact-method:hover{transform:translateY(-3px);border-color:var(--accent-color);box-shadow:0 10px 30px rgba(79,172,254,0.2)}.contact-method h3{color:var(--accent-color);margin-bottom:.5rem}button.contact-method{font:inherit;text-align:inherit;width:100%;cursor:pointer}.email-contact{cursor:pointer}.email-placeholder{transition:all var(--transition-fast) ease}.email-contact:not(.revealed):hover .email-placeholder{color:var(--accent-color)}.show-email-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.5rem 1rem;background:rgba(79,172,254,0.1);border:1px solid var(--accent-color);border-radius:6px;transition:all var(--transition-fast) ease;font-weight:500}.show-email-btn:hover{background:rgba(79,172,254,0.2)}.email-revealed{animation:fadeInUp 0.5s ease-out}.email-link{color:var(--accent-color);text-decoration:none;font-weight:500;transition:color var(--transition-fast) ease;cursor:pointer}.email-link:hover{color:var(--accent-hover);text-decoration:underline}.email-text{font-family:'Courier New',monospace;background:rgba(79,172,254,0.1);padding:.2rem .4rem;border-radius:4px;border:1px solid rgba(79,172,254,0.3);word-break:break-all}footer{text-align:center;padding:3rem 0;border-top:1px solid var(--border-color);margin-top:4rem;color:var(--text-muted)}.footer-link{color:var(--accent-color);text-decoration:none;font-weight:500;padding:.5rem 1rem;border:1px solid var(--accent-color);border-radius:4px;transition:all 0.3s ease;display:inline-block;margin-top:1rem}.footer-link:hover,.footer-link:focus{background-color:rgba(79,172,254,0.1);color:var(--accent-hover);transform:translateY(-2px);box-shadow:0 4px 10px rgba(79,172,254,0.2)}:is(a,button,.skill-item,.contact-method):focus-visible{outline:2px solid var(--accent-color);outline-offset:4px;border-radius:6px}@media (max-width:480px){.container{padding:0 1rem}header{padding:3rem 0}.profile-picture{width:150px;height:150px}.socials{gap:1rem}.social-link{padding:.6rem 1.2rem}.social-link:hover{padding:calc(0.6rem - 1px) calc(1.2rem - 1px)}.section-title{margin-bottom:2rem}.projects-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}.project-content{padding:1.2rem}}</style>
 </head>
 
 <body>
@@ -742,15 +74,14 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <div class="container">
-        <!-- ================================
-          HEADER SECTION
-          ================================ -->
+        <!-- HEADER SECTION -->
         <header id="top">
             <div class="hero-content">
                 <div class="profile-picture">
                     <picture>
                         <source srcset="images/H-small.webp" media="(max-width: 480px)">
-                        <img src="images/H.webp" alt="Hazem Abdelhamid - Technology Solutions Specialist" width="180" height="180" loading="eager">
+                        <!-- Added fetchpriority="high" for LCP element -->
+                        <img src="images/H.webp" alt="Hazem Abdelhamid - Technology Solutions Specialist" width="180" height="180" loading="eager" fetchpriority="high">
                     </picture>
                 </div>
 
@@ -787,20 +118,16 @@
         </header>
         
         <main id="main-content" tabindex="-1">
-            <!-- ================================
-             ABOUT SECTION
-             ================================ -->
+            <!-- ABOUT SECTION -->
             <section id="about">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <p>As a multifaceted <strong>Frontend Developer</strong> and <strong>Technology Solutions Specialist</strong>, I deliver comprehensive digital and IT services designed to elevate your online presence and streamline your operations. My expertise lies in architecting responsive, high-performance websites and web applications, ensuring an exceptional user experience through clean, maintainable code and a focus on accessibility (A11y).</p>
-                    <p>Beyond bespoke <strong>web development</strong> and <strong>portfolio creation</strong>, I provide robust <strong>IT solutions</strong>, including seamless CMS and Odoo implementations, meticulous <strong>device optimization</strong>, and strategic <strong>system integration</strong>. By grounding every project in <strong>SEO best practices</strong> and a commitment to peak web performance, I create digital products that are not only visually compelling but also highly discoverable. Whether you need a powerful web application, an optimized IT infrastructure, or ongoing <strong>technology services</strong> and support, I am dedicated to providing solutions that are scalable, reliable, and engineered for success.</p>
+                    <p>Beyond bespoke <strong>web development</strong> and <strong>website creation</strong>, I provide robust <strong>IT solutions</strong>, including seamless CMS and Odoo implementations, meticulous <strong>device optimization</strong>, and strategic <strong>system integration</strong>. By grounding every project in <strong>SEO best practices</strong> and a commitment to peak web performance, I create digital products that are not only visually compelling but also highly discoverable. Whether you need a powerful web application, an optimized IT infrastructure, or ongoing <strong>technology services</strong> and support, I am dedicated to providing solutions that are scalable, reliable, and engineered for success.</p>
                 </div>
             </section>
 
-            <!-- ================================
-             SKILLS SECTION
-             ================================ -->
+            <!-- SKILLS SECTION -->
             <section id="skills">
                 <h2 class="section-title">Core Competencies & Services</h2>
                 <div class="skills-categories">
@@ -834,17 +161,16 @@
                 </div>
             </section>
 
-            <!-- ================================
-             PROJECTS SECTION
-             ================================ -->
+            <!-- PROJECTS SECTION -->
             <section id="projects">
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card fade-in" role="article" aria-labelledby="project1-title">
                         <div class="project-image">
+                            <!-- : Responsive images with srcset and sizes -->
                             <picture>
-                                <source srcset="images/baloot-mobile.webp" media="(max-width: 480px)">
-                                <img src="images/baloot.webp" alt="Responsive website design for Al Baloot Al Sagheer Nursery" width="600" height="338" loading="lazy">
+                                <source type="image/webp" srcset="images/baloot-400w.webp 400w, images/baloot-800w.webp 800w" sizes="(max-width: 600px) 90vw, (max-width: 960px) 45vw, 320px">
+                                <img src="images/baloot-800w.webp" alt="Responsive website design for Al Baloot Al Sagheer Nursery" width="600" height="338" loading="lazy">
                             </picture>
                         </div>
                         <div class="project-content">
@@ -861,9 +187,10 @@
 
                     <div class="project-card fade-in" role="article" aria-labelledby="project2-title">
                         <div class="project-image">
+                            <!-- Responsive images with srcset and sizes -->
                             <picture>
-                                <source srcset="images/hls-mobile.webp" media="(max-width: 480px)">
-                                <img src="images/hls.webp" alt="Educational platform website for Al Horreya Language Schools" width="600" height="338" loading="lazy">
+                                <source type="image/webp" srcset="images/hls-400w.webp 400w, images/hls-800w.webp 800w" sizes="(max-width: 600px) 90vw, (max-width: 960px) 45vw, 320px">
+                                <img src="images/hls-800w.webp" alt="Educational platform website for Al Horreya Language Schools" width="600" height="338" loading="lazy">
                             </picture>
                         </div>
                         <div class="project-content">
@@ -880,9 +207,10 @@
 
                     <div class="project-card fade-in" role="article" aria-labelledby="project3-title">
                         <div class="project-image">
+                            <!-- Responsive images with srcset and sizes -->
                             <picture>
-                                <source srcset="images/najjar-mobile.webp" media="(max-width: 480px)">
-                                <img src="images/najjar.webp" alt="B2B company website for Al Najjar Fiberglass using Odoo CMS" width="600" height="338" loading="lazy">
+                                <source type="image/webp" srcset="images/najjar-400w.webp 400w, images/najjar-800w.webp 800w" sizes="(max-width: 600px) 90vw, (max-width: 960px) 45vw, 320px">
+                                <img src="images/najjar-800w.webp" alt="B2B company website for Al Najjar Fiberglass using Odoo CMS" width="600" height="338" loading="lazy">
                             </picture>
                         </div>
                         <div class="project-content">
@@ -899,16 +227,14 @@
                 </div>
             </section>
 
-            <!-- ================================
-             CONTACT SECTION
-             ================================ -->
+            <!-- CONTACT SECTION -->
             <section id="contact">
                 <h2 class="section-title">Let's Build Together</h2>
                 <div class="contact-content">
                     <p class="contact-text">Whether you need a new website, an IT solution, or have a question about technology, I'm ready to help you achieve your goals. Reach out to start the conversation.</p>
                     <div class="contact-methods">
-                        <div class="contact-method email-contact" onclick="revealEmail(this); trackEvent('Contact', 'Email Reveal', 'Contact Section')" role="button" tabindex="0" aria-label="Reveal email address">
-                            <i class="fas fa-envelope" style="font-size: 1.5em; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
+                        <button type="button" class="contact-method email-contact" onclick="revealEmail(this); trackEvent('Contact', 'Email Reveal', 'Contact Section')" aria-label="Reveal email address">
+                            <i class="fas fa-envelope" style="font-size: 1.5em; color: var(--accent-color); margin-bottom: 0.5rem;" aria-hidden="true"></i>
                             <h3>Email Me</h3>
                             <p class="email-placeholder">
                                 <span class="show-email-btn">
@@ -923,9 +249,9 @@
                                     Click email to copy
                                 </small>
                             </div>
-                        </div>
+                        </button>
                         <a href="https://api.whatsapp.com/send/?phone=201558245210" class="contact-method" target="_blank" rel="noopener" onclick="trackEvent('Contact', 'WhatsApp Click', 'Contact Section')" aria-label="Contact via WhatsApp">
-                            <i class="fab fa-whatsapp" style="font-size: 1.5em; color: var(--accent-color); margin-bottom: 0.5rem;"></i>
+                            <i class="fab fa-whatsapp" style="font-size: 1.5em; color: var(--accent-color); margin-bottom: 0.5rem;" aria-hidden="true"></i>
                             <h3>Message on WhatsApp</h3>
                             <p>For quick & direct messaging</p>
                         </a>
@@ -935,9 +261,7 @@
         </main>
     </div>
 
-    <!-- ================================
-     FOOTER
-     ================================ -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <p>Designed & Developed with passion by Hazem Abdelhamid &copy; 2025</p>
@@ -946,6 +270,35 @@
     </footer>
     
     <script>
+        /* ================================
+           DEFERRED GOOGLE ANALYTICS
+           ================================ */
+        const loadAnalytics = () => {
+            const script = document.createElement('script');
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L8FDW51HZX';
+            script.async = true;
+            document.head.appendChild(script);
+            
+            script.onload = () => {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-L8FDW51HZX');
+                
+                // Track initial page load after script is ready
+                trackEvent('Page', 'Fully Loaded', window.location.pathname);
+            };
+            
+            // Clean up event listeners after loading
+            ['scroll', 'mousemove', 'touchstart', 'click'].forEach(event => 
+                window.removeEventListener(event, loadAnalytics, { passive: true })
+            );
+        };
+        // Load GA on first user interaction
+        ['scroll', 'mousemove', 'touchstart', 'click'].forEach(event => 
+            window.addEventListener(event, loadAnalytics, { once: true, passive: true })
+        );
+
         /* ================================
            GOOGLE ANALYTICS EVENT TRACKING
            ================================ */
@@ -963,32 +316,25 @@
            EMAIL REVEAL FUNCTIONALITY
            ================================ */
         const emailParts = { user: 'hazem.a.egy', domain: 'gmail', tld: 'com' };
-
         function revealEmail(element) {
             if (element.classList.contains('revealed')) return;
             element.classList.add('revealed');
-            
             const emailAddress = `${emailParts.user}@${emailParts.domain}.${emailParts.tld}`;
-            
             const placeholder = element.querySelector('.email-placeholder');
             const revealed = element.querySelector('.email-revealed');
             const emailText = element.querySelector('.email-text');
             const emailLink = element.querySelector('.email-link');
-            
             placeholder.style.display = 'none';
             revealed.style.display = 'block';
             emailText.textContent = emailAddress;
             emailLink.href = 'mailto:' + emailAddress;
-            
             const copyHandler = (e) => {
                 e.preventDefault();
                 e.stopPropagation();
                 copyEmailToClipboard(emailAddress);
             };
-            
             emailText.addEventListener('click', copyHandler);
             emailLink.addEventListener('click', copyHandler);
-            
             trackEvent('Contact', 'Email Revealed', 'Success');
         }
 
@@ -1028,14 +374,11 @@
         function showCopyNotification(message, isError = false) {
             const existingNotification = document.querySelector('.copy-notification');
             if (existingNotification) existingNotification.remove();
-            
             const notification = document.createElement('div');
             notification.className = 'copy-notification';
             notification.textContent = message;
             notification.style.cssText = `position: fixed; top: 20px; right: 20px; background: ${isError ? '#e53e3e' : '#4facfe'}; color: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 1000; font-weight: 500; transform: translateX(120%); transition: transform 0.3s ease; max-width: 300px;`;
-            
             document.body.appendChild(notification);
-            
             setTimeout(() => { notification.style.transform = 'translateX(0)'; }, 10);
             setTimeout(() => {
                 notification.style.transform = 'translateX(120%)';
@@ -1052,7 +395,6 @@
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
                     observer.unobserve(entry.target);
-                    
                     const sectionId = entry.target.closest('section')?.id;
                     if (sectionId) trackEvent('Page View', 'Section Viewed', sectionId);
                 }
@@ -1078,7 +420,6 @@
                     trackEvent('Navigation', 'Click', 'Back to Top');
                 });
             }
-
             document.querySelectorAll('a[target="_blank"]').forEach(link => {
                 link.addEventListener('click', () => {
                     const url = link.href;
@@ -1087,13 +428,8 @@
                 });
             });
         });
-
-        window.addEventListener('load', () => {
-            trackEvent('Page', 'Fully Loaded', window.location.pathname);
-        });
-
+        
         console.log('Portfolio loaded successfully.');
     </script>
 </body>
-
 </html>
